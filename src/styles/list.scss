@@ -1,0 +1,56 @@
+.list {
+  flex-grow: 1;
+  height: 100vh;
+  overflow-x: scroll
+}
+
+.list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start;
+  border: 1px solid $list-item-border-color;
+  border-radius: 4px;
+  padding: 5px 0 0 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $list-item-bg-hover;
+
+    > .item-controls {      
+      opacity: 1;
+    }
+  }
+}
+
+.list-item-placeholder {
+  padding: 10px;
+  font-size: 24px;
+  color: $list-item-placeholder-color;
+}
+
+.list-title { 
+  width: 100%;
+  text-align: left;
+  padding: 0 10px;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
+.list-text,
+.list-date {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.list-type {
+  width: 100%;
+  height: 12px;
+  color: $list-type-color;
+  font-size: 10px;    
+}

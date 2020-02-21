@@ -1,0 +1,19 @@
+.input-field {
+  width: 100%;
+  height: 38px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  border: 1px solid $input-field-border-color;
+  border-radius: 4px;
+  transition: all 0.24s ease;
+  outline: none;
+}
+
+.input-error {
+  background-color: $input-error-bg;
+  border-color: $input-error-border-color;
+
+  &::placeholder {
+    color: $input-error-placeholder-color;
+  }
+}

@@ -1,0 +1,55 @@
+.btn {
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  margin: 0 10px 10px 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.24s ease;
+
+  &--disabled {
+    border: none;
+    opacity: 0.7;
+    cursor: default;    
+
+    &:active {
+      outline: none
+    }
+  }
+
+  &:hover {
+    background: $btn-hover-bg;
+  }
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  fill: $btn-icon-fill;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    fill: $btn-icon-bg;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.item-controls {  
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  opacity: 0;
+  transition: all 0.24s ease;
+}

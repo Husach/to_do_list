@@ -1,0 +1,22 @@
+.black {
+  background: $dark-theme-bg;
+
+  .editor {
+    background: $dark-theme-bg-addition;   
+  }  
+
+  .list-item {
+    &:hover {
+      background-color: $dark-theme-bg-addition; 
+    }
+  }
+
+  .editor,
+  .list-text,
+  .list-title,
+  .switch-title,
+  .input-title,
+  .select-title {
+    color: $dark-theme-color;
+  }
+}

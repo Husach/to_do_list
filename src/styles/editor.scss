@@ -1,0 +1,29 @@
+.editor {
+  padding: 10px;
+  background-color: $editor-bg;
+  border: 1px solid $editor-border-color;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.editor-two-column {
+  display: flex;
+  justify-content: space-between;  
+
+  > div {
+    width: calc((100% - 10px) / 2);
+  }
+}
+
+.react-datepicker-wrapper {  
+  margin-bottom: 10px;
+}
+
+.datepicker {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid $datepicker-border-color;
+  border-radius: 4px;   
+}
